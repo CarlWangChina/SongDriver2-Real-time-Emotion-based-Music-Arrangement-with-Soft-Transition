@@ -1,0 +1,36 @@
+.adaptation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.myBtns {
+  box-sizing: border-box;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 250rpx 250rpx;
+  background: linear-gradient(200deg, #7ecde2, #80b1fc);
+  color: black;
+}
+
+.btnBox {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  flex: 1 1 50%;
+  border: 3px solid white;
+}
+
+.btn:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  color: white;
+}
