@@ -1,0 +1,16 @@
+src_len: 64    # enc_input max sequence length 
+tgt_len: 16    # dec_input(=dec_output) max sequence length 
+d_model: 256  # Embedding Size original 512
+d_ff: 1024    # FeedForward dimension
+d_k: 512       # dimension of K(=Q)
+d_v: 512       # dimension of V
+d_emb_emo: 512
+n_layers: 4   # number of Encoder & Decoder Layer
+n_heads: 2    # number of heads in Multi-Head Attention orginal 8
+batch_size: 16
+epoch: 20
+lr: 0.0001
+dropout: 0.1
+src_vocab_size: 113
+tgt_vocab_size: 17327
+
