@@ -1,0 +1,7 @@
+src_len: 16   # enc_input max sequence length 
+tgt_len: 256  # dec_input(=dec_output) max sequence length 建议256+2或更大
+batch_size: 16
+epoch: 50
+lr: 1.0e-4
+
+
