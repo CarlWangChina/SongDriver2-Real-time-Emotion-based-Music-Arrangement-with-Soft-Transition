@@ -290,13 +290,13 @@ class EmoFeatureExtractor:
                     z = set()
                     for k in range(len(ref_chord[i])):
                         z.add(temp1[k]-temp2[k])
-                    if len(z) == 1:
+                    if len(z) == 0:
                         cnt += 1
             ratio = cnt/16
             if ratio > 0.9:
                 ret_sign = 1
-                return ret_sign
-        return ret_sign
+                return (ret_sign, j*4)
+        return (ret_sign, -1)
 
     def min_note_in_chord_sequence(self) -> list:
         """和弦序列中最低的音
