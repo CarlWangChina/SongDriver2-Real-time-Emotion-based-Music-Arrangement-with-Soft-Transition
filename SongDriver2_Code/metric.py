@@ -1,6 +1,6 @@
 import torch
 
-# 
+
 def get_emo_consistency(seq_emotion: torch.Tensor):
     # seq_emotion: [num_click, 16, 2]
     res_seq_emotion = torch.zeros_like(seq_emotion)
