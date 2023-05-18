@@ -180,6 +180,3 @@ def read_txt(pth):
 
     return emo_av, keys, melody_low, melody_high, chord, terminate, music_feat
 
-if __name__ == '__main__':
-    print(getDataFromMusicFile("dataset/labeled/ccmed-ypf-╟щ╕╨▒ъ╟й╥╤▒г┴Ї2╬╗╨б╩¤-╫ю╓╒-╬┤╔╛╝ї/xi-emo/Beethoven_Op030No2-01_109_20061215-SMD_2.mp3.emo.txt"))
-    print(getDataFromMusicFile("dataset/unlabeled/unlabel-╚л▓┐-┤ж└э║═╔╕╤б═ъ▒╧/5.txt"))

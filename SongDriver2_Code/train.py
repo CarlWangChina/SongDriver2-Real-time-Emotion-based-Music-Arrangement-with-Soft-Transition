@@ -10,7 +10,7 @@ from config import Config
 from tqdm import tqdm
 from torch.utils.data import DataLoader
 from data.musicDatasetFast import AiMusicDatasetLow
-from models.muthera import DualMuThera
+from models.songdriver2 import SongDriver2
 
 
 SEED = 3547
@@ -18,7 +18,7 @@ torch.manual_seed(SEED)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 fusion_type = 'median'
 # only use label
-NAME = 'muTheraDual_{}'.format(fusion_type)
+NAME = 'SongDriver2{}'.format(fusion_type)
 LOG_PATH = 'log/{}'.format(NAME)
 CKPT_PATH = 'modelzoo/{}'.format(NAME)
 
@@ -151,7 +151,7 @@ def test(model, loader):
     return chord_acc, note_acc
 
 if __name__ == '__main__':
-    args = Config('config_muthera.yaml')
+    args = Config('config_songdriver.yaml')
     args.input_start = 'S'
     args.output_start = 'E'
     args.batch_size = 16
@@ -166,5 +166,5 @@ if __name__ == '__main__':
     
     print('Dataloader done.')
 
-    model = DualMuThera(emo_ckpt_pth=None,emo_fusion_type=fusion_type).to(device)
+    model = SongDriver2(emo_ckpt_pth=None,emo_fusion_type=fusion_type).to(device)
     pipeline(model, train_loader, eval_loader, test_loader, args)

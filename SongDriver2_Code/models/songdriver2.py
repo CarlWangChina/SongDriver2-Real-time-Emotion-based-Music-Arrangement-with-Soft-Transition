@@ -30,13 +30,13 @@ class PositionalEncoding(nn.Module):
         x = x + self.pe[:x.size(0), :]
         return self.dropout(x)
 
-class DualMuThera(nn.Module):
+class SongDriver2(nn.Module):
     def __init__(
             self, emo_ckpt_pth=None, chord_yaml='config_m2c.yaml', 
             melody_yaml='config_n2m.yaml', emo_fusion_type='replace', 
             d_emb_emo=512, va_dim=16, unlabeled=False, remove_music_feat=None
         ):
-        super(DualMuThera, self).__init__()
+        super(SongDriver2, self).__init__()
         args_chord = Config(chord_yaml)
         args_melody = Config(melody_yaml)
         self.emo_fusion_type = emo_fusion_type
