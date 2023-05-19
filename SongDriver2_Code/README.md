@@ -9,6 +9,12 @@
 - train.py: the training pipeline of SongDriver2.
 - utils.py: some supportive functions to read datas.
 
+## models
+- emo_model.py: emotion recognition model based on an MLP.
+- music_feature_extractor.py: the class to extract music theory features from the sequence of melody, chord and key.
+- songdriver2.py: the implemented SongDriver2 model.
+- transformer.py: the implemented Transformer.
+
 ## data
 - data_preprocess.py: the code to process datasets used by SongDriver2.
 - musicDatasetFast/musicDatasetEnhance: the code to load datas from downsample or w/o downsampling datas.
@@ -20,10 +26,4 @@
 - Chapter 4 of the Paper gives the source, citation and download links of the dataset, and we use open source emotion labeling datasets from other researchers.
 - Chapter 8 of the Supplementary gives the detailed step-by-step methods for processing the dataset and the data representation, and we used other researchers' open-source audio-to-midi methods such as Onsets & Frames, Harvest method, etc. to obtain the training data.
 - The Paper and Supplementary spend nearly 2 pages to explain the training data acquisition, which is very detailed, thus other researchers can follow these steps to obtain their own training data and be more free to take more suitable data representation for their own models, such as midi, musicxml, REMI, etc.
-
-## models
-- emo_model.py: emotion recognition model based on an MLP.
-- music_feature_extractor.py: the class to extract music theory features from the sequence of melody, chord and key.
-- songdriver2.py: the implemented SongDriver2 model.
-- transformer.py: the implemented Transformer.
 
