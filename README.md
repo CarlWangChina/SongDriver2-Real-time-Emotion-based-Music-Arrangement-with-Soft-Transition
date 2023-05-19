@@ -1,4 +1,4 @@
-# SongDriver2: Real-time Emotion-based Music Arrangement with Soft Transition
+# [SongDriver2: Real-time Emotion-based Music Arrangement with Soft Transition](https://doi.org/10.48550/arXiv.2305.08029)
 SongDriver2 first recognize the last timestep's music emotion and then fuse it with the current timestep's target input emotion. The fused emotion then serves as the guidance for SongDriver2 to generate the upcoming music based on the input melody data. SongDriver2 achieves a balance between real-time emotion fit and soft transitions, enhancing the coherence of the generated music.
 
 
