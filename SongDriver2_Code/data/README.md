@@ -1,7 +1,7 @@
 # Obtain training data
 
 - This paper does not make any innovative points or contribution points in terms of dataset.
-- Therefore, you can refer to the following open source innovation work/open source contribution work of other researchers to get the training data by yourself.
+- Therefore, you can refer to the following open source innovation / contribution work of other researchers to get the training data by yourself.
 
 ## Open source contribution work from other researchers
 - Chapter 4 of the Paper gives the source, citation and download links of the dataset, and we use open source emotion labeling datasets from other researchers.
