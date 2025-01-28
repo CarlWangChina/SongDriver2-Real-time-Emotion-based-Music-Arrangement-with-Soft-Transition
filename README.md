@@ -1,11 +1,11 @@
-# [SongDriver2: Real-time Emotion-based Music Arrangement with Soft Transition](https://doi.org/10.48550/arXiv.2305.08029)
-SongDriver2 first recognize the last timestep's music emotion and then fuse it with the current timestep's target input emotion. The fused emotion then serves as the guidance for SongDriver2 to generate the upcoming music based on the input melody data. SongDriver2 achieves a balance between real-time emotion fit and soft transitions, enhancing the coherence of the generated music.
+# [REMAST: Real-time Emotion-based Music Arrangement with Soft Transition](https://doi.org/10.48550/arXiv.2305.08029)
+REMAST first recognize the last timestep's music emotion and then fuse it with the current timestep's target input emotion. The fused emotion then serves as the guidance for REMAST to generate the upcoming music based on the input melody data. REMAST achieves a balance between real-time emotion fit and soft transitions, enhancing the coherence of the generated music.
 
 
 # The respository structure
-* **APP_Code**: the code of application including fontend and backend. The users can interate with the application by selecting their current emotion and the generated music by SongDriver2 or the recommneded music will be played.
+* **APP_Code**: the code of application including fontend and backend. The users can interate with the application by selecting their current emotion and the generated music by REMAST or the recommneded music will be played.
 
-* **SongDriver2_Code**: the code of SongDriver2 pipeline, which is implemented by Pytorch.
+* **SongDriver2_Code**: the code of REMAST pipeline, which is implemented by Pytorch.
 
 # Downsampling pipeline & w/o Downsampling pipeline
 We do not adopt the w/o Downsampling pipeline in our research, because the low similarity to the original music is an unbearable pain point. From the perspective of application value, we ultimately chose the Downsampling pipeline (generate a high-resolution version including harmony and melody details from the low-resolution representation based on the real-time input emotion) for our research. 
